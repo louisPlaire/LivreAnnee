@@ -7,12 +7,28 @@
     <title>Le livre des terminales A</title>
 </head>
 <body>
+    <!-- Menu -->
     <img id="background" src="./resources/images/classe2.jpg">
     <div id="menu">
-        <h1 id="title">Découvrez la classe de teminale A</h1>
+        <h1 id="title">Découvrez la classe de terminale A</h1>
         <p onclick="go()" id="go">C'est parti !</p>
     </div>
+
+
+    <!-- Application -->
+    <div id="app">
+        <!-- Buttons to go the the next or the previous image -->
+        <div id="rightButton" onclick="nextPic()"></div>
+        
+        <div id="content">
+            <img id="imageContainer" src="./resources/images/classe.jpg"></img>
+            <h2 id="titleContent">Title</h2>
+            <p id="descriptionContent">Lorem ipsum dolores</p>
+        </div>
+
+    </div>
+
 </body>
 <script src="./photo.js" type="module"></script>
-<script src="./script.js" type="module"></script>
+<script src="./script.js" type="text/javascript"></script>
 </html>

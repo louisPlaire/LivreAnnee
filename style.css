@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
+    transition: 0.7s;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -16,10 +17,9 @@ body{
     transition: 0.75s;
     position: absolute;
     top: -30%;
-    height: auto;
-    width: 100vw;
+    height: 200vh;
     z-index: -100;
-    opacity: 0.85;
+    opacity: 0.8;
     filter: blur(4px);
 }
 
@@ -57,4 +57,59 @@ body{
     background-color: #EF8354;
     color: white;
     transform: scale(1.15);
+}
+
+#content{
+    text-align: center;
+}
+
+#imageContainer{
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: block;
+    margin: 40px auto;
+    height: 480px;
+    width: 720px;
+}
+
+#titleContent{
+    margin: 0;
+
+}
+
+#descriptionContent{
+    margin: 0;
+
+}
+
+#rightButton{
+    transition: 0.4s;
+    position: absolute;
+    right: 40px;
+    top: 45vh;
+    width: 40px; 
+    height: 10px;
+    background-color: #EF8354;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+#rightButton::after{
+    content: '';
+    transition: 0.4s;
+    position: absolute;
+    width: 40px; 
+    height: 10px;
+    background-color: #EF8354;
+    border-radius: 2px;
+    transform: rotate(90deg) translate(15px, -15px);
+}
+
+rightButton:hover{
+    transition: 0.25s;
+    transform: translateX(10px);
+}
+rightButton::after:hover{
+    transition: 0.25s;
+    transform: translateX(10px);
 }
