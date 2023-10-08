@@ -18,11 +18,13 @@
     <!-- Application -->
     <div id="app">
         <!-- Buttons to go the the next or the previous image -->
-        <div id="rightButton" onclick="nextPic()"></div>
+        <!-- <div id="rightButton" onclick="nextPic()"></div> -->
         
+        <img src="./resources/icons/arrow_forward_orange.png" id="rightButton" onclick="nextPic()">
+
         <div id="content">
-            <img id="imageContainer" src="./resources/images/classe.jpg"></img>
             <h2 id="titleContent">Title</h2>
+            <img id="imageContainer" src="./resources/images/classe.jpg" onclick="sizeUp()"></img>
             <p id="descriptionContent">Lorem ipsum dolores</p>
         </div>
 

@@ -18,7 +18,7 @@ body{
     position: absolute;
     top: -30%;
     height: 200vh;
-    z-index: -100;
+    z-index: -10;
     opacity: 0.8;
     filter: blur(4px);
 }
@@ -61,55 +61,54 @@ body{
 
 #content{
     text-align: center;
+    margin: 50px 0;
 }
 
 #imageContainer{
+    transition: 0.4s;
     background-repeat: no-repeat;
     border-radius: 10px;
     display: block;
-    margin: 40px auto;
-    height: 480px;
-    width: 720px;
+    margin: 4px auto;
+    height: 30%;
+    width: 57%;
+    size: 20vw;
+}
+
+#imageContainer:hover{
+    transition: 0.25s;
+    transform: scale(102%); 
+    z-index: -50px;
 }
 
 #titleContent{
-    margin: 0;
-
+    margin: 10px 0;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Roboto';
+    letter-spacing: 5px;
+    color: #2b2b2b;
 }
 
 #descriptionContent{
-    margin: 0;
-
+    font-family: 'Roboto';
+    font-weight: 900;
+    background-color: #2b2b2b/*#ececec*/;
+    color: #ececec;
+    padding: 30px 60px;
+    width: fit-content;
+    margin: -20px auto;
+    border-radius: 10px;
+    max-width: 40vw;
+    line-height: 150%;
 }
-
 #rightButton{
     transition: 0.4s;
     position: absolute;
     right: 40px;
-    top: 45vh;
-    width: 40px; 
-    height: 10px;
-    background-color: #EF8354;
-    border-radius: 2px;
-    transform: rotate(45deg);
+    top: 50vh;
 }
 
-#rightButton::after{
-    content: '';
-    transition: 0.4s;
-    position: absolute;
-    width: 40px; 
-    height: 10px;
-    background-color: #EF8354;
-    border-radius: 2px;
-    transform: rotate(90deg) translate(15px, -15px);
-}
-
-rightButton:hover{
-    transition: 0.25s;
-    transform: translateX(10px);
-}
-rightButton::after:hover{
-    transition: 0.25s;
-    transform: translateX(10px);
+#rightButton:hover{
+    transform: translateX(5px);
 }
