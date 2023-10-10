@@ -4,23 +4,6 @@ class PhotoElement{
         this.description = description
         this.photoPath = photoPath
     }
-
-    // USELESS ??
-    /*add() {
-        const title = document.createElement("h2")    
-        title.innerHTML = this.name
-
-        const description = document.createElement("p")
-        description.innerHTML = this.description
-
-        const photo = document.createElement("img")
-        photo.src = this.photoPath
-
-
-        document.body.appendChild(title)
-        document.body.appendChild(description)
-        document.body.appendChild(photo)
-    }*/
 }
 
 
@@ -58,21 +41,34 @@ function go(){
         document.body.style.overflow = "scroll"
 
         document.body.appendChild(application) // adding the app again
+
         nextPic()
     }, 1000)
 }
 
 function nextPic(){
     
-    let imageContainer = document.getElementById("imageContainer")
-    let titleContent = document.getElementById("titleContent")
-    let descriptionContent = document.getElementById("descriptionContent")
     
     currentPic++
 
     if(currentPic > elements.length - 1){
         currentPic = 0
     }
+
+    let input = document.getElementById("selector")
+    
+    input.placeholder = ""
+    input.placeholder = (currentPic + 1).toString() + "/" + elements.length.toString()
+
+
+    displayPicture()
+}
+
+// get the components of a picture and update them
+function displayPicture(){
+    let imageContainer = document.getElementById("imageContainer")
+    let titleContent = document.getElementById("titleContent")
+    let descriptionContent = document.getElementById("descriptionContent")
 
     imageContainer.src = `${elements[currentPic].photoPath}`
     titleContent.innerHTML = elements[currentPic].name
@@ -84,7 +80,25 @@ function sizeUp(){
     window.open(imageContainer.src)
 }
 
+function displayPicBynumber(){
+    let input = document.getElementById("selector")
+    
+    input.placeholder = ""
+    input.placeholder = (currentPic + 1).toString() + "/" + elements.length.toString()
+    
+    
+    currentPic = input.value
+    
+    if(currentPic > elements.length - 1){
+        currentPic = elements.length - 1
+    }else if(currentPic < 0){
+        currentPic = 0
+    }
+    
+    displayPicture()
+    input.value = ''
 
+}
 
 
 

@@ -19,22 +19,23 @@ body{
     top: -30%;
     height: 200vh;
     z-index: -10;
-    opacity: 0.8;
+    opacity: 0.5;
     filter: blur(4px);
 }
 
 #menu{
     transition: 0.75s;
     text-align: center;
-    margin-top: 45vh;
+    margin-top: 40vh;
 }
 
 #title{
     font-family: 'Roboto', 'Arial';
     font-weight: 900;
-    font-size: 68px;
+    font-size: 5vw;
     color: white;
-    margin: 0;
+    margin: 0 auto;
+    width: 70%;
 }
 
 #go{
@@ -52,6 +53,8 @@ body{
     cursor: pointer;
 }
 
+
+
 #go:hover{
     transition: 0.4s;
     background-color: #EF8354;
@@ -64,6 +67,18 @@ body{
     margin: 50px 0;
 }
 
+#descriptionContent{
+    font-family: 'Roboto';
+    font-weight: 900;
+    background-color: #2b2b2b;
+    color: #ececec;
+    padding: 30px 60px;
+    width: fit-content;
+    margin: -20px auto;
+    border-radius: 10px;
+    max-width: 40vw;
+    line-height: 150%;
+}
 #imageContainer{
     transition: 0.4s;
     background-repeat: no-repeat;
@@ -86,29 +101,36 @@ body{
     font-size: 40px;
     font-weight: 900;
     font-family: 'Roboto';
-    letter-spacing: 5px;
     color: #2b2b2b;
 }
 
-#descriptionContent{
-    font-family: 'Roboto';
-    font-weight: 900;
-    background-color: #2b2b2b/*#ececec*/;
-    color: #ececec;
-    padding: 30px 60px;
-    width: fit-content;
-    margin: -20px auto;
-    border-radius: 10px;
-    max-width: 40vw;
-    line-height: 150%;
-}
 #rightButton{
     transition: 0.4s;
-    position: absolute;
+    position: fixed;
     right: 40px;
     top: 50vh;
 }
 
 #rightButton:hover{
     transform: translateX(5px);
+    box-shadow: #2b2b2b -2px 0 0px;
+}
+
+#selector{
+    transition: 0.25s;
+    right: 10px;
+    bottom: 10px;
+    width: 25px;
+    text-align: center;
+    border: #EF8354 solid 2px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: default;
+    outline: none;
+    position: fixed;
+}
+
+#selector:focus{
+    transition: 0.4s;
+    border-color: #2b2b2b;
 }
