@@ -9,59 +9,67 @@ body{
     transition: 0.7s;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #2b2b2b;
     cursor: default;
+    overflow: hidden;
 }
 
-/* To modify because it isn't responsive */
-#background{
-    transition: 0.75s;
-    position: absolute;
-    top: -30%;
-    height: 200vh;
-    z-index: -10;
-    opacity: 0.5;
-    filter: blur(4px);
-}
 
 #menu{
     transition: 0.75s;
-    text-align: center;
-    margin-top: 40vh;
+    margin: 20vh 4vw;
+    display: grid;
+}
+
+#background{
+    transition: 0.75s;
+    z-index: -10;
+    opacity: 0.5;
+    grid-column: 2;
+    margin: auto auto;
+    border-radius: 10px;
+    position: absolute;
+    right: 20vw;
+    width: 30%;
+    filter: blur(1px);
+    transform: rotate(5deg);
 }
 
 #title{
     font-family: 'Roboto', 'Arial';
     font-weight: 900;
-    font-size: 5vw;
+    font-size: 5.5vw;
     color: white;
     margin: 0 auto;
-    width: 70%;
+    grid-column: 1;
 }
-
 #go{
-    transition: 0.25s;
-    margin: 20px auto;
-    width: 200px;
+    text-align: center;
+    transition: 0.2s;
+    width: 30%;
+    margin: 30px 30%;
     padding: 10px 5px;
     font-family: 'Roboto', 'Arial';
     font-weight: 500;
-    font-size: 25px;
+    font-size: 2vw;
     color: white;
     border: #EF8354 2px solid;
     border-radius: 5px;
     background-color: rgba(42, 42, 42, 0.1);
     cursor: pointer;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 
 
 #go:hover{
     transition: 0.4s;
-    background-color: #EF8354;
+    /*background-color: #EF8354;
     color: white;
-    transform: scale(1.15);
+    transform: scale(1.15);*/
+    box-shadow: inset #EF8354 0 -100px 0 0;
+    transform: scale(1.1);
 }
 
 #content{
