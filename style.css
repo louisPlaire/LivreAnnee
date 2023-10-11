@@ -21,18 +21,30 @@ body{
     display: grid;
 }
 
-#background{
+#image1{
     transition: 0.75s;
     z-index: -10;
-    opacity: 0.5;
     grid-column: 2;
     margin: auto auto;
     border-radius: 10px;
     position: absolute;
     right: 20vw;
     width: 30%;
-    filter: blur(1px);
+    filter: blur(1.75px) brightness(0.75);
     transform: rotate(5deg);
+}
+
+#image2{
+    transition: 0.75s;
+    z-index: -5;
+    grid-column: 2;
+    margin: auto auto;
+    border-radius: 10px;
+    position: absolute;
+    right: 30vw;
+    width: 25%;
+    filter: blur(1.25px) brightness(0.75);
+    transform: rotate(-5deg);
 }
 
 #title{
@@ -40,22 +52,21 @@ body{
     font-weight: 900;
     font-size: 5.5vw;
     color: white;
-    margin: 0 auto;
+    margin: 0 8%;
     grid-column: 1;
 }
 #go{
     text-align: center;
     transition: 0.2s;
     width: 30%;
-    margin: 30px 30%;
+    margin: 30px 8%;
     padding: 10px 5px;
     font-family: 'Roboto', 'Arial';
     font-weight: 500;
-    font-size: 2vw;
+    font-size: 2.25vw;
     color: white;
     border: #EF8354 2px solid;
     border-radius: 5px;
-    background-color: rgba(42, 42, 42, 0.1);
     cursor: pointer;
     grid-column: 1;
     grid-row: 2;

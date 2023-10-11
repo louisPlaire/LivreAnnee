@@ -15,7 +15,6 @@ class PhotoElement{
 
 
 const mainMenu = document.getElementById("menu")
-const background = document.getElementById("background")
 
 // app variable it contains the elements of the actual book app
 const application = document.getElementById("app")
@@ -33,10 +32,8 @@ let elements = [p1, p2, p3]
 // launches the app
 function go(){
     mainMenu.style.opacity = "0"
-    background.style.opacity = "0"
     setTimeout(function(){
         mainMenu.remove()
-        background.remove()
         document.body.style.backgroundColor = "#eee"
         document.body.style.overflow = "scroll"
 
