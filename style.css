@@ -29,7 +29,7 @@ body{
     position: absolute;
     right: 20vw;
     width: 30%;
-    filter: blur(1.75px);
+    filter: blur(1.75px) brightness(1.1);
     transform: rotate(5deg);
 }
 
@@ -42,7 +42,7 @@ body{
     position: absolute;
     right: 30vw;
     width: 25%;
-    filter: blur(1.25px);
+    filter: blur(1.25px) brightness(1.1);
     transform: rotate(-5deg);
 }
 
