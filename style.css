@@ -9,7 +9,7 @@ body{
     transition: 0.7s;
     margin: 0;
     padding: 0;
-    background-color: #2b2b2b;
+    background-color: #fff;
     cursor: default;
     overflow: hidden;
 }
@@ -30,7 +30,7 @@ body{
     position: absolute;
     right: 20vw;
     width: 30%;
-    filter: blur(1.75px) brightness(0.75);
+    filter: blur(1.75px);
     transform: rotate(5deg);
 }
 
@@ -43,7 +43,7 @@ body{
     position: absolute;
     right: 30vw;
     width: 25%;
-    filter: blur(1.25px) brightness(0.75);
+    filter: blur(1.25px);
     transform: rotate(-5deg);
 }
 
@@ -51,7 +51,7 @@ body{
     font-family: 'Roboto', 'Arial';
     font-weight: 900;
     font-size: 5.5vw;
-    color: white;
+    color: #2b2b2b;
     margin: 0 8%;
     grid-column: 1;
 }
@@ -64,8 +64,8 @@ body{
     font-family: 'Roboto', 'Arial';
     font-weight: 500;
     font-size: 2.25vw;
-    color: white;
-    border: #EF8354 2px solid;
+    color: #2b2b2b;
+    border: #EF8354 3px solid;
     border-radius: 5px;
     cursor: pointer;
     grid-column: 1;
@@ -76,12 +76,26 @@ body{
 
 #go:hover{
     transition: 0.4s;
-    /*background-color: #EF8354;
-    color: white;
-    transform: scale(1.15);*/
     box-shadow: inset #EF8354 0 -100px 0 0;
     transform: scale(1.1);
+    color: white;
 }
+
+#about{
+    transition: 0.2s;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    scale: 1;
+}
+#about:hover{
+    scale: 1.15;
+}
+
+
+
+
+
 
 #content{
     text-align: center;
@@ -154,4 +168,47 @@ body{
 #selector:focus{
     transition: 0.4s;
     border-color: #2b2b2b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile displays */
+/* Has to be updated a bit */
+@media screen and (max-width: 600px) {
+
+    #title{
+        font-family: 'Roboto', 'Arial';
+        font-weight: 900;
+        font-size: 9vw;
+        color: #2b2b2b;
+        margin: 0 8%;
+        grid-column: 1;
+    }
+
+    #go{
+        text-align: center;
+        transition: 0.2s;
+        width: 70%;
+        margin: 30px 8%;
+        padding: 20px 5px;
+        font-family: 'Roboto', 'Arial';
+        font-weight: 500;
+        font-size: 5vw;
+        color: #2b2b2b;
+        border: #EF8354 3px solid;
+        border-radius: 5px;
+        cursor: pointer;
+        grid-column: 1;
+        grid-row: 2;
+    }
 }

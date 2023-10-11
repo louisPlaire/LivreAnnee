@@ -34,7 +34,7 @@ function go(){
     mainMenu.style.opacity = "0"
     setTimeout(function(){
         mainMenu.remove()
-        document.body.style.backgroundColor = "#eee"
+        document.body.style.backgroundColor = "#fff"
         document.body.style.overflow = "scroll"
 
         document.body.appendChild(application) // adding the app again
