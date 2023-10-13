@@ -23,7 +23,7 @@ application.remove() // we remove it first to add it when the menu is exited
 let currentPic = -1
 
 //#region the place where we write and store each picture
-let p1 = new PhotoElement("La classe", " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula arcu lectus, ut sagittis enim rutrum a. Fusce cursus lorem sed nunc blandit fermentum. Cras convallis ipsum in quam dictum, et laoreet magna iaculis. Donec placerat efficitur enim, nec vehicula libero ornare eu. Phasellus tristique", "./resources/images/classe.jpg")
+let p1 = new PhotoElement("La classe", " Lorem ipsum dolor sit amet, Louis boulot, consectetur adipiscing elit. Sed vehicula arcu lectus, ut sagittis enim rutrum a. Fusce cursus lorem sed nunc blandit fermentum. Cras convallis ipsum in quam dictum, et laoreet magna iaculis. Donec placerat efficitur enim, nec vehicula libero ornare eu. Phasellus tristique", "./resources/images/classe.jpg")
 let p2 = new PhotoElement("Le tire à la corde", " Nulla facilisi. Vivamus quis ligula id diam posuere porttitor et in nibh. Morbi venenatis semper odio, at commodo enim pulvinar posuere. Phasellus quis ex at nunc pharetra pulvinar congue vitae purus. Vestibulum massa tellus, imperdiet id augue vel, ultrices tincidunt est. ", "./resources/images/corde.jpg")
 let p3 = new PhotoElement("La classe encore", "Quisque vulputate velit et laoreet luctus. Curabitur eget egestas dui, in gravida enim. Praesent placerat turpis ac nibh interdum congue. Nunc efficitur in quam vel consectetur. Vivamus aliquam augue et ligula ornare tincidunt a eget augue. ", "./resources/images/classe2.jpg")
 let elements = [p1, p2, p3]
