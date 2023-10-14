@@ -109,10 +109,11 @@ body{
     color: #ececec;
     padding: 30px 60px;
     width: fit-content;
-    margin: -20px auto;
+    margin: 20px auto;
     border-radius: 10px;
     max-width: 40vw;
     line-height: 150%;
+    z-index: 5;
 }
 #imageContainer{
     transition: 0.4s;
@@ -120,15 +121,15 @@ body{
     border-radius: 10px;
     display: block;
     margin: 4px auto;
-    height: 30%;
-    width: 57%;
-    size: 20vw;
+    width: 70vw;
+    z-index: 10;
 }
 
 #imageContainer:hover{
     transition: 0.25s;
     transform: scale(102%); 
-    z-index: -50px;
+    filter: blur(4px);
+    opacity: 0.1;
 }
 
 #titleContent{
