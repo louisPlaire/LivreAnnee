@@ -19,9 +19,6 @@
 
     <!-- Application -->
     <div id="app">
-        <!-- Buttons to go the the next or the previous image -->        
-        <img src="./resources/icons/arrow_forward_orange.png" id="rightButton" onclick="nextPic()">
-
         <div id="content">
             <h2 id="titleContent">Title</h2>
             <div id="contentInfo">
@@ -29,11 +26,15 @@
                 <p id="descriptionContent">Lorem ipsum dolores</p>
             </div>
         </div>
-        <input placeholder="0" type="text" id="selector" onchange="displayPicBynumber()">
+        <div onclick="showHelp()" id="help"><img src="./resources/icons/help_icon.png"></div>
+
+        <div id="helpWindow">
+            <h1>Help</h1>
+        </div>
+
     </div>
 
 </body>
-<script src="./photo.js" type="module"></script>
 <script src="./script.js" type="text/javascript"></script>
 </html>
 

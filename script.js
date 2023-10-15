@@ -18,9 +18,31 @@ const mainMenu = document.getElementById("menu")
 
 // app variable it contains the elements of the actual book app
 const application = document.getElementById("app")
+const helpWindow = document.getElementById("helpWindow")
+helpWindow.remove()
 application.remove() // we remove it first to add it when the menu is exited
 
 let currentPic = -1
+let isInApp = false
+
+
+// slide logic
+let mouseX = 0
+window.onmousedown = e => {
+    mouseX = e.x
+}
+
+window.onmouseup = e => {
+    if(isInApp){
+        if(mouseX < e.x){
+            changePic(-1)
+        }else{
+            changePic(1)
+        }
+    }
+}
+
+
 
 //#region the place where we write and store each picture
 let p1 = new PhotoElement("La classe", " Lorem ipsum dolor sit amet, Louis boulot, consectetur adipiscing elit. Sed vehicula arcu lectus, ut sagittis enim rutrum a. Fusce cursus lorem sed nunc blandit fermentum. Cras convallis ipsum in quam dictum, et laoreet magna iaculis. Donec placerat efficitur enim, nec vehicula libero ornare eu. Phasellus tristique", "./resources/images/classe.jpg")
@@ -39,24 +61,22 @@ function go(){
 
         document.body.appendChild(application) // adding the app again
 
-        nextPic()
+        changePic(1)
+        isInApp = true
     }, 1000)
 }
 
-function nextPic(){
+function changePic(value){
     
     
-    currentPic++
+    currentPic += value
 
     if(currentPic > elements.length - 1){
         currentPic = 0
     }
-
-    let input = document.getElementById("selector")
-    
-    input.placeholder = ""
-    input.placeholder = (currentPic + 1).toString() + "/" + elements.length.toString()
-
+    if(currentPic < 0){
+        currentPic = elements.length - 1
+    }
 
     displayPicture()
 }
@@ -77,27 +97,9 @@ function sizeUp(){
     window.open(imageContainer.src)
 }
 
-function displayPicBynumber(){
-    let input = document.getElementById("selector")
-    
-    input.placeholder = ""
-    input.placeholder = (currentPic + 1).toString() + "/" + elements.length.toString()
-    
-    
-    currentPic = input.value
-    
-    if(currentPic > elements.length - 1){
-        currentPic = elements.length - 1
-    }else if(currentPic < 0){
-        currentPic = 0
-    }
-    
-    displayPicture()
-    input.value = ''
-
+function showHelp(){
+    application.appendChild(helpWindow)
 }
-
-
 
 
 
