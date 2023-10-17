@@ -29,7 +29,18 @@
         <div onclick="showHelp()" id="help"><img src="./resources/icons/help_icon.png"></div>
 
         <div id="helpWindow">
-            <h1>Help</h1>
+            <h1 id="helpTitle">Besoin d'aide ?</h1>
+            <p onclick="hideHelp()" id="closeHelpButton">Compris !</p>
+            <div id="helpContent">
+                <div id="swipeLeft">
+                    <img class="helpImage" src="./resources/icons/swipeLeft_icon.png">
+                    <h3 class="helpText">Swiper à gauche pour voir la photo précédente</h3>
+                </div>
+                <div id="swipeRight">
+                    <img class="helpImage" src="./resources/icons/swipeRight_icon.png">
+                    <h3 class="helpText">Swiper à droite pour voir la photo suivante</h3>
+                </div>
+            </div>
         </div>
 
     </div>

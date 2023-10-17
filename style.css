@@ -115,9 +115,7 @@ img{
     font-size: 50px;
     font-weight: 900;
     font-family: 'Roboto';
-    color: #2b2b2b;
-    border-bottom: #434242 solid 4px;
-    width: 64%;
+    color: white;
 }
 
 #contentInfo{
@@ -129,10 +127,8 @@ img{
 #imageContainer{
     width: 99%; height: 100%;
     object-fit: cover;
-    border-radius: 10px;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
     margin: 0;
+    border-radius: 10px;
 
     box-shadow: #9f9f9f 0 0 10px 3px;
 
@@ -141,14 +137,14 @@ img{
 #descriptionContent{
     font-family: 'Roboto';
     font-weight: 900;
+    font-size: 1rem;
     border-radius: 10px;
     border-top-right-radius: 1px;
     border-top-left-radius: 1px;
-    background-color: #2b2b2b;
-    color: white;
+    background-color: #EF8354;
+    color: #fff;
     padding: 20px 10px;
     margin: 5px;
-
 }
 
 #help{
@@ -156,6 +152,7 @@ img{
     scale: 0.5;
     position: fixed;
     right: 5px; bottom: 5px;
+    cursor: pointer;
 }
 
 #help:hover{
@@ -168,12 +165,78 @@ img{
     left: 0; top: 0;
     width: 100vw; height: 100vh;
     background-color: #2b2b2b;
-    opacity: 0.9;
+    opacity: 0.99;
     display: grid;
+    text-align: center;
+    color: white;
+    overflow: scroll;
+
 }
 
+#helpTitle{
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 50px;
+    margin: 40px 0 30px 0;
+}
 
+#closeHelpButton{
+    transition: 0.4s;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 20px;
+    border: #EF8354 solid 3px;
+    margin: 0 auto 50px auto;
+    padding: 10px 50px;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
 
+    &:hover{
+        transition: 0.2s;
+        box-shadow: inset #EF8354 0 -45px 0 0;
+        scale: 1.1;
+    }
+}
+
+#helpContent{
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    margin: auto 0;
+    margin-bottom: 50px;
+}
+
+.helpImage{
+    scale: 1;
+}
+
+.helpText{
+    font-family: 'Roboto';
+    font-weight: 800;
+    font-size: 25px;
+    width: 60%;
+    margin: 30px auto;
+}
+
+#swipeLeft{
+    border: #EF8354 solid 5px;
+    border-radius: 10px;
+    padding: 12% 50px;
+    margin: 0 auto;
+    height: fit-content;
+    width: 30%;
+}
+
+#swipeRight{
+    border: #EF8354 solid 5px;
+    border-radius: 10px;
+    padding: 12% 50px;
+    margin: 0 auto;
+    height: fit-content;
+    width: 30%;
+}
 
 
 

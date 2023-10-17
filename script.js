@@ -24,6 +24,18 @@ application.remove() // we remove it first to add it when the menu is exited
 
 let currentPic = -1
 let isInApp = false
+let isInContextMenu = false
+
+
+
+function showHelp(){
+    isInContextMenu = true
+    application.appendChild(helpWindow)
+}
+function hideHelp(){
+    isInContextMenu = false
+    helpWindow.remove()
+}
 
 
 // slide logic
@@ -33,7 +45,7 @@ window.onmousedown = e => {
 }
 
 window.onmouseup = e => {
-    if(isInApp){
+    if(isInApp && !isInContextMenu){
         if(mouseX < e.x){
             changePic(-1)
         }else{
@@ -56,7 +68,7 @@ function go(){
     mainMenu.style.opacity = "0"
     setTimeout(function(){
         mainMenu.remove()
-        document.body.style.backgroundColor = "#fff"
+        document.body.style.backgroundColor = "#2b2b2b"
         document.body.style.overflow = "scroll"
 
         document.body.appendChild(application) // adding the app again
@@ -97,9 +109,7 @@ function sizeUp(){
     window.open(imageContainer.src)
 }
 
-function showHelp(){
-    application.appendChild(helpWindow)
-}
+
 
 
 
