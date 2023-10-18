@@ -6,7 +6,7 @@
 
 
 body{
-    transition: 0.7s;
+    transition: 0.4s;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -127,10 +127,12 @@ img{
 #imageContainer{
     width: 99%; height: 100%;
     object-fit: cover;
-    margin: 0;
+    margin: 0 auto;
     border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 
-    box-shadow: #9f9f9f 0 0 10px 3px;
+    box-shadow: #fff 0 0 0px 3px;
 
 }
 
@@ -144,7 +146,7 @@ img{
     background-color: #EF8354;
     color: #fff;
     padding: 20px 10px;
-    margin: 5px;
+    margin: 5px auto;
 }
 
 #help{
@@ -161,6 +163,7 @@ img{
 }
 
 #helpWindow{
+    transition: 0.4s;
     position: fixed;
     left: 0; top: 0;
     width: 100vw; height: 100vh;
@@ -170,7 +173,6 @@ img{
     text-align: center;
     color: white;
     overflow: scroll;
-
 }
 
 #helpTitle{
@@ -197,15 +199,17 @@ img{
         transition: 0.2s;
         box-shadow: inset #EF8354 0 -45px 0 0;
         scale: 1.1;
+        background-color: #EF8354;
     }
 }
 
 #helpContent{
     display: flex;
-    gap: 10%;
+    gap: 5%;
     flex-wrap: wrap;
-    margin: auto 0;
-    margin-bottom: 50px;
+    margin: 1vh auto 50px auto;
+    align-items: center;
+    align-content: center;
 }
 
 .helpImage{
@@ -224,18 +228,19 @@ img{
     border: #EF8354 solid 5px;
     border-radius: 10px;
     padding: 12% 50px;
-    margin: 0 auto;
     height: fit-content;
     width: 30%;
+    margin: auto;
+
 }
 
 #swipeRight{
     border: #EF8354 solid 5px;
     border-radius: 10px;
     padding: 12% 50px;
-    margin: 0 auto;
     height: fit-content;
     width: 30%;
+    margin: auto;
 }
 
 

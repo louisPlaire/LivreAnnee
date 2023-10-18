@@ -31,10 +31,14 @@ let isInContextMenu = false
 function showHelp(){
     isInContextMenu = true
     application.appendChild(helpWindow)
+    helpWindow.style.opacity = "1"
 }
 function hideHelp(){
     isInContextMenu = false
-    helpWindow.remove()
+    helpWindow.style.opacity = "0"
+    setTimeout(function(){
+        helpWindow.remove()
+    }, 1000)
 }
 
 
