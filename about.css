@@ -37,5 +37,7 @@ p{
 body{
     margin: 0;
     padding: 0;
+    background: #fff no-repeat url("./resources/images/FOND_TEST.png");
+    background-size: 25%;
 }
 
