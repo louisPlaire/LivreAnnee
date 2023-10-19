@@ -7,17 +7,20 @@ h1{
     margin: auto;
     font-size: 5vw;
 }
+
 p{
     font-family: "Roboto";
 }
+
 .intro{
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
     color: white;
     text-align: center;
     font-size: 1.22vw;
 }
 
-body{
+.box{
     background-color: rgb(43, 43, 43);
+    padding-top: 2%;
 }
