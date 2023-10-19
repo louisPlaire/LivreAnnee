@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-h1{
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff no-repeat url("./resources/images/FOND_TEST.png");
+    background-size: 25%;
+}
+
+
+#title{
     text-align: center;
     font-family: "Roboto";
     color: white;
@@ -16,7 +26,7 @@ p{
     font-family: "Roboto";
 }
 
-.intro{
+#intro{
     margin-top: 10%;
     margin-left: 7%;
     margin-right: 7%;
@@ -34,10 +44,4 @@ p{
     margin-right: auto;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background: #fff no-repeat url("./resources/images/FOND_TEST.png");
-    background-size: 25%;
-}
 
