@@ -60,10 +60,14 @@ window.onmouseup = e => {
 
 
 //#region the place where we write and store each picture
-let p1 = new PhotoElement("La classe", " Lorem ipsum dolor sit amet, Louis boulot, consectetur adipiscing elit. Sed vehicula arcu lectus, ut sagittis enim rutrum a. Fusce cursus lorem sed nunc blandit fermentum. Cras convallis ipsum in quam dictum, et laoreet magna iaculis. Donec placerat efficitur enim, nec vehicula libero ornare eu. Phasellus tristique", "./resources/images/classe.jpg")
-let p2 = new PhotoElement("Le tire à la corde", " Nulla facilisi. Vivamus quis ligula id diam posuere porttitor et in nibh. Morbi venenatis semper odio, at commodo enim pulvinar posuere. Phasellus quis ex at nunc pharetra pulvinar congue vitae purus. Vestibulum massa tellus, imperdiet id augue vel, ultrices tincidunt est. ", "./resources/images/corde.jpg")
-let p3 = new PhotoElement("La classe encore", "Quisque vulputate velit et laoreet luctus. Curabitur eget egestas dui, in gravida enim. Praesent placerat turpis ac nibh interdum congue. Nunc efficitur in quam vel consectetur. Vivamus aliquam augue et ligula ornare tincidunt a eget augue. ", "./resources/images/classe2.jpg")
-let elements = [p1, p2, p3]
+let p1 = new PhotoElement("La classe", "Pendant la journée d'intégration, la classe des Ta eut à préparer une corégraphie qu'ils durent présenter à un jury.", "./resources/images/classe.jpg")
+let p2 = new PhotoElement("Le tir à la corde", "Le tir à la corde fut une des épreuves les plus éprouvantes pour la classe de terminale A, ils finirent par gagner malgré les obstacles.", "./resources/images/corde.jpg")
+let p3 = new PhotoElement("La préparation", "La terminale A pendant la préparation agit comme une classe soudée et investie", "./resources/images/classe2.jpg")
+let p4 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "./resources/images/pancartes.jpg")
+
+let elements = [p1, p2, p3, p4]
+
+
 //#endregion
 
 // launches the app
