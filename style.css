@@ -85,6 +85,7 @@ img{
     box-shadow: inset #EF8354 0 -100px 0 0;
     transform: scale(1.1);
     color: white;
+    background-color: #EF8354;
 }
 
 #about{
@@ -273,5 +274,15 @@ img{
         cursor: pointer;
         grid-column: 1;
         grid-row: 2;
+    }
+
+    #image1{
+        width: 50%;
+        right: 5vw;
+    }
+    #image2{
+        width: 50%;
+        right: 5vw;
+
     }
 }
