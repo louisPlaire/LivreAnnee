@@ -26,7 +26,23 @@ let currentPic = -1
 let isInApp = false
 let isInContextMenu = false
 
+let swipeSlider = document.getElementById("swipeSlider")
+swipeSlider.remove()
 
+
+function mobileSwipe(){
+    let mouseX = 0
+    let mouseY = 0
+    window.onmousedown = e => {
+        mouseX = e.x
+        mouseY = e.y 
+    }
+    swipeSlider.style.position = "absolute"
+    swipeSlider.style.top = `${mouseY}px`
+    swipeSlider.style.left = `${mouseX}px`
+    application.appendChild(swipeSlider)
+    console.log(swipeSlider.value)
+}
 
 function showHelp(){
     isInContextMenu = true

@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="./style.css">
     <title>Le livre des terminales A</title>
 </head>
-<body>
+<body onmousedown="mobileSwipe()">
+    <input min="0" max="1" onchange="mobileSwipe()" id="swipeSlider" type="range">
     <!-- Menu -->
     <div id="menu">
         <h1 id="title">Découvrez <br> la Classe <br> de Terminale A.</h1>
@@ -18,6 +19,8 @@
 
     <!-- Application -->
     <div id="app">
+
+
         <div id="content">
             <h2 id="titleContent">Title</h2>
             <div id="contentInfo">
