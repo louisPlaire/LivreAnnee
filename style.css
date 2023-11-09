@@ -150,6 +150,18 @@ img{
     margin: 5px auto;
 }
 
+#rightButton{
+    height: 100%;
+    width: 40px;
+    position: fixed;
+    right: 0; 
+    top: 0;
+    background-color: red;
+}
+
+
+
+
 #help{
     transition: 0.3s;
     scale: 0.5;
