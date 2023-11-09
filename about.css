@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: black;
+    background: linear-gradient(rgb(43, 43, 43), grey);
     background-size: 25%;
     color: white;
 }
@@ -18,7 +18,7 @@ body{
     font-size: 4vw;
     background-color: rgb(43, 43, 43);
     padding: 3%;
-    border: solid  5px #ef8354 ;
+    border: solid  0.4vw #ef8354 ;
     position: fixed;
     width: 93.5%;
     font-weight: 900;
@@ -48,38 +48,49 @@ p{
 }
 
 .icon1{
-    display: flex;
+    display:block;
     border-radius: 50%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -4%;
-    border:solid #ef8354 5px
+    border:solid #ef8354 0.3vw;
+    margin: 0 auto;
 }
 
-#legende1{
-    text-align: center;
+.legende{
     font-family: "Roboto";
+    text-align: center;
+    font-size: 1.3vw;
 }
 
 .icon2{
-    display: flex;
+    display:block;
     border-radius: 50%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6%;
-    border:solid #ef8354 5px
+    border:solid #ef8354 0.3vw;
+    margin: 0 auto;
 }
 
 .icon3{
-    display: flex;
+    display: block;
     border-radius: 50%;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6%;
-    border:solid #ef8354 5px
+    border:solid #ef8354 0.3vw;
+    margin: 0 auto;
+
+}
+
+.figure1{
+    width: 33%;
+}
+
+.figure2{
+    width: 33%;
+}
+
+.figure3{
+    width:33%;
+}
+
+#icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 /* For mobile displays */
