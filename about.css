@@ -16,12 +16,8 @@ body{
     color: white;
     margin: auto;
     font-size: 4vw;
-    background-color: rgb(43, 43, 43);
-    padding: 3%;
-    border: solid  0.4vw #ef8354 ;
-    position: fixed;
-    width: 93.5%;
     font-weight: 900;
+    position: flex ;
 }
 
 p{
@@ -91,6 +87,19 @@ p{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+}
+
+
+#title_box{
+    background-color: rgb(43, 43, 43);
+    padding: 3%;
+    border: solid  0.4vw #ef8354 ;
+    position: fixed;
+    width: 93.5%;
+}
+
+#back{
+    position: flex;
 }
 
 /* For mobile displays */
