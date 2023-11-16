@@ -4,7 +4,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgb(43, 43, 43), grey);
+    background: linear-gradient(white, grey);
     background-size: 25%;
     color: white;
 }
@@ -12,7 +12,7 @@ body{
 
 #title{
     font-family: "Roboto";
-    color: white;
+    color: black;
     margin: auto;
     font-size: 4vw;
     font-weight: 900;
@@ -27,14 +27,14 @@ p{
     margin-left: 7%;
     margin-right: 7%;
     padding: 5%;
-    color: white;
+    color: black;
     text-align: center;
     font-size: 1.5vw;
     font-weight: 500;
 }
 
 .box{
-    background-color: rgb(43, 43, 43);
+    background-color: white;
     padding-top: 2%;
     width: 80%;
     margin-left: auto;
@@ -52,6 +52,7 @@ p{
     font-family: "Roboto";
     text-align: center;
     font-size: 1.3vw;
+    color: black;
 }
 
 .icon2{
@@ -89,7 +90,7 @@ p{
 
 
 #title_box{
-    background-color: rgb(43, 43, 43);
+    background-color: white;
     padding: 3%;
     border: solid  0.4vw #ef8354 ;
     position: fixed;
