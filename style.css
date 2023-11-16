@@ -152,13 +152,22 @@ img{
 
 #rightButton{
     height: 100%;
-    width: 40px;
+    width: 35%;
     position: fixed;
     right: 0; 
     top: 0;
     background-color: red;
+    opacity: 0;
 }
-
+#leftButton{
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    left: 0; 
+    top: 0;
+    background-color: red;
+    opacity: 0;
+}
 
 
 

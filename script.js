@@ -39,7 +39,7 @@ function hideHelp(){
     }, 1000)
 }
 
-
+/*
 // slide logic
 let mouseX = 0
 window.onmousedown = e => {
@@ -54,7 +54,7 @@ window.onmouseup = e => {
             changePic(1)
         }
     }
-}
+}*/
 
 
 //#region the place where we write and store each picture
