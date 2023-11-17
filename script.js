@@ -115,6 +115,9 @@ function displayPicture(){
     let titleContent = document.getElementById("titleContent")
     let descriptionContent = document.getElementById("descriptionContent")
 
+    imageContainer.src = ''
+    imageContainer.innerHTML = "chargement"
+
     imageContainer.src = `${elements[currentPic].photoPath}`
     titleContent.innerHTML = elements[currentPic].name
     descriptionContent.innerHTML = elements[currentPic].description
