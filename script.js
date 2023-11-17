@@ -57,6 +57,17 @@ window.onmouseup = e => {
 }*/
 
 
+// arrows logic
+document.addEventListener("keydown", function(e){
+    if(e.code == "ArrowLeft"){
+        changePic(-1)
+    }
+    if(e.code == "ArrowRight"){
+        changePic(1)
+    }
+})
+
+
 //#region the place where we write and store each picture
 let p1 = new PhotoElement("La classe", "Pendant la journée d'intégration, la classe des Ta eut à préparer une corégraphie qu'ils durent présenter à un jury.", "./resources/images/classe.jpg")
 let p2 = new PhotoElement("Le tir à la corde", "Le tir à la corde fut une des épreuves les plus éprouvantes pour la classe de terminale A, ils finirent par gagner malgré les obstacles.", "./resources/images/corde.jpg")
