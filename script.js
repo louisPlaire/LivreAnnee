@@ -109,7 +109,10 @@ function changePic(value){
     }
 
     displayPicture()
-    
+    $(".imageContainer").on("load", function(){
+        let imageContainer = document.getElementById("imageContainer")
+        imageContainer.style.transform = "rotate(90deg)"
+    })
 }
 
 // get the components of a picture and update them
