@@ -12,10 +12,13 @@ body{
 
 #title{
     font-family: "Roboto";
-    color: black;
+    color: white;
     margin: auto;
     font-size: 4vw;
     font-weight: 900;
+    transform: rotate(-90deg);
+    position: fixed;
+    margin-top: 20%;
 }
 
 p{
@@ -39,6 +42,7 @@ p{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -8%;
 }
 
 .icon1{
@@ -90,21 +94,30 @@ p{
 
 
 #title_box{
-    background-color: white;
+    background-color: #ef8354;
     padding: 3%;
     border: solid  0.4vw #ef8354 ;
-    position: fixed;
-    width: 93.5%;
-    display:flex
+    width: 15%;
+    height: 100vh;
 }
 
 #back{
+    transition: 0.4s;
+    margin: -2%;
     position:fixed
 }
 
 #back:hover{
-    width: 6%;
+    transition: 0.4s;
+    width: 4%;
     height: auto;
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+
+
+#everything{
+    display: flex;
 }
 
 /* For mobile displays */
