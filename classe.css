@@ -7,3 +7,7 @@
     background-color: #ffd8a8;
 }
 
+
+* {
+    box-sizing: border-box;
+  }
