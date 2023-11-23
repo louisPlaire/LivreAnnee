@@ -11,3 +11,11 @@
 * {
     box-sizing: border-box;
   }
+  
+  .wrapper > div {
+    border: 2px solid #f08615;
+    border-radius: 5px;
+    background-color: #ff9718;
+    padding: 1em;
+    color: #d9480f;
+  }
