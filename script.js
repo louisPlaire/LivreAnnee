@@ -110,7 +110,7 @@ function changePic(value){
 
     displayPicture()
     let imageContainer = document.getElementById("imageContainer")
-    imageContainer.style.transform = "rotate(360deg)"
+    imageContainer.style.transform = "rotate(0deg)"
 
 }
 
