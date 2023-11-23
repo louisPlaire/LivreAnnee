@@ -24,7 +24,7 @@ body{
 
 img{
     pointer-events: none;
-    background: #EF8354;
+    background: url("./resources/images/anto.jpg");
 }
 
 #image1{
