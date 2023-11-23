@@ -68,6 +68,8 @@ document.addEventListener("keydown", function(e){
 })
 
 
+
+
 //#region the place where we write and store each picture
 let p1 = new PhotoElement("La classe", "Pendant la journée d'intégration, la classe des Ta eut à préparer une corégraphie qu'ils durent présenter à un jury.", "./resources/images/classe.jpg")
 let p2 = new PhotoElement("Le tir à la corde", "Le tir à la corde fut une des épreuves les plus éprouvantes pour la classe de terminale A, ils finirent par gagner malgré les obstacles.", "./resources/images/corde.jpg")
@@ -107,6 +109,7 @@ function changePic(value){
     }
 
     displayPicture()
+    
 }
 
 // get the components of a picture and update them
