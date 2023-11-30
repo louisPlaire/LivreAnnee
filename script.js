@@ -110,14 +110,14 @@ function changePic(value){
 
     displayPicture()
     let imageContainer = document.getElementById("imageContainer")
-    imageContainer.style.transform = "rotate(0deg)"
 
+    imageContainer.className = ""
 }
 
 function loadImage(){
     console.log("loading")
     let imageContainer = document.getElementById("imageContainer")
-    imageContainer.style.transform = "rotate(360deg)"
+    imageContainer.className = "fading"
 }
 
 // get the components of a picture and update them

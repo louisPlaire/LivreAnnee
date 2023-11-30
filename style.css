@@ -78,8 +78,6 @@ img{
     grid-row: 2;
 }
 
-
-
 #go:hover{
     transition: 0.4s;
     box-shadow: inset #EF8354 0 -100px 0 0;
@@ -124,6 +122,21 @@ img{
     margin: 0 auto;
 }
 
+@keyframes fade {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.fading{
+    animation: fade 0.75s;
+}
 
 #imageContainer{
     transition: 0.4s;
