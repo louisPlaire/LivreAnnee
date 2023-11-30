@@ -135,7 +135,7 @@ img{
 }
 
 .fading{
-    animation: fade 0.75s;
+    -moz-animation: fade 0.75s;
 }
 
 #imageContainer{
