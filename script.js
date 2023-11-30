@@ -109,7 +109,15 @@ function changePic(value){
     }
 
     displayPicture()
-    
+    let imageContainer = document.getElementById("imageContainer")
+    imageContainer.style.transform = "rotate(0deg)"
+
+}
+
+function loadImage(){
+    console.log("loading")
+    let imageContainer = document.getElementById("imageContainer")
+    imageContainer.style.transform = "rotate(360deg)"
 }
 
 // get the components of a picture and update them

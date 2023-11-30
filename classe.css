@@ -3,14 +3,12 @@
     grid-template-columns: repeat(7,1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px,auto);
-    border: 2px solid #ffa94d;
-    background-color: #ffd8a8;
+
+    padding: 5%;
 }
 
 
-* {
-    box-sizing: border-box;
-  }
+
   
   .wrapper > div {
     border: 2px solid #f08615;
