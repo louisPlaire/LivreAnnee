@@ -204,7 +204,7 @@ img{
     left: 0; top: 0;
     width: 100vw; height: 100vh;
     background-color: #2b2b2b;
-    opacity: 0.99;
+    opacity: 1;
     display: grid;
     text-align: center;
     color: white;
@@ -255,9 +255,10 @@ img{
 .helpText{
     font-family: 'Roboto';
     font-weight: 800;
-    font-size: 25px;
-    width: 60%;
+    font-size: 20px;
+    width: 80%;
     margin: 30px auto;
+    justify-content: center;
 }
 
 #swipeLeft{
