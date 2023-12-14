@@ -76,6 +76,7 @@ let p2 = new PhotoElement("Le tir à la corde", "Le tir à la corde fut une des 
 let p3 = new PhotoElement("La préparation", "La terminale A pendant la préparation agit comme une classe soudée et investie", "./resources/images/classe2.jpg")
 let p4 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "./resources/images/pancartes.jpg")
 
+
 let elements = [p1, p2, p3, p4]
 
 
@@ -110,14 +111,14 @@ function changePic(value){
 
     displayPicture()
     let imageContainer = document.getElementById("imageContainer")
-    imageContainer.style.transform = "rotate(0deg)"
 
+    imageContainer.className = ""
 }
 
 function loadImage(){
     console.log("loading")
     let imageContainer = document.getElementById("imageContainer")
-    imageContainer.style.transform = "rotate(360deg)"
+    imageContainer.className = "fading"
 }
 
 // get the components of a picture and update them
