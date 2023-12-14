@@ -6,15 +6,11 @@ body{
 
 
 
-
-
-
 .wrapper {
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(100px,auto);
-
+    grid-auto-rows: minmax(10px,auto);
     padding: 5%;
 }
 
@@ -22,7 +18,7 @@ body{
 
   
   .wrapper > div {
-    border: 2px solid #f08615;
+    border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: #ff9718;
     padding: 1em;
