@@ -10,7 +10,7 @@ body{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(10px,auto);
+    grid-auto-rows: minmax(auto,auto);
     padding: 5%;
 }
 
@@ -23,6 +23,7 @@ body{
     padding: 1em;
     color: #d9480f;
   }
+
   .wrapper > .seleve{
     border: 2px solid #ffffff;
     border-radius: 5px;
