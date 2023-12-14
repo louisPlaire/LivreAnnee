@@ -10,17 +10,19 @@ body{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 10px;
-    grid-auto-rows: minmax(10px,auto);
+    grid-auto-rows: minmax(100px,auto);
     padding: 5%;
 }
 
 
-
   
-  .wrapper > div {
+  .wrapper > .eleve {
     border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: #ff9718;
     padding: 1em;
     color: #d9480f;
+  }
+  .wrapper > .seleve{
+
   }
