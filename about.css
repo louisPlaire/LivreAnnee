@@ -140,7 +140,32 @@ p{
         position: fixed;
         margin-top: 50%;
     }
+
+    #title_box{
+        min-height: 100vh;
+    }
+
     #intro{
         font-size: 4vw;
+    }
+
+    .icon1{
+        width: 50%;
+    }
+
+    .icon2{
+        width: 50%;
+    }
+
+    .icon3{
+        width: 50%;
+    }
+
+    .icon4{
+        width: 50%;
+    }
+
+    .legende{
+        font-size: 3vw;
     }
 }
