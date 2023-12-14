@@ -36,10 +36,18 @@ img{
   }
 
   .wrapper > .seleve{
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #ff9718;
+    border-radius: 10px;
+    background-color: #ef8354;
     padding: 1em;
-    color: #d9480f;
-
+    color: #ffffff;
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+    color: #ffffff;
+    background-color: #EF8354;
+    border-radius: 10px;
+    padding: 10px;
+    width: 44%;
+    margin: 20px auto;
   }
