@@ -1,3 +1,14 @@
+body{
+  background-color: #2b2b2b;
+}
+
+
+
+
+
+
+
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(7,1fr);
