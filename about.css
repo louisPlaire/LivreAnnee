@@ -71,7 +71,13 @@ p{
     border-radius: 50%;
     border:solid #ef8354 0.3vw;
     margin: 0 auto;
+}
 
+.icon4{
+    display: block;
+    border-radius: 50%;
+    border:solid #ef8354 0.3vw;
+    margin: 0 auto;
 }
 
 .figure1{
@@ -84,6 +90,10 @@ p{
 
 .figure3{
     width:33%;
+}
+
+.figure4{
+    width: 33%;
 }
 
 #icons{
@@ -120,10 +130,15 @@ p{
     display: flex;
 }
 
+
+
 /* For mobile displays */
 @media screen and (max-width: 600px) {
     #title{
         font-size: 6vw;
+        margin-left: -10%;
+        position: fixed;
+        margin-top: 50%;
     }
     #intro{
         font-size: 4vw;
