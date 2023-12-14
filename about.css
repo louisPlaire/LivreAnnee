@@ -136,6 +136,9 @@ p{
 @media screen and (max-width: 600px) {
     #title{
         font-size: 6vw;
+        margin-left: -10%;
+        position: fixed;
+        margin-top: 50%;
     }
     #intro{
         font-size: 4vw;
