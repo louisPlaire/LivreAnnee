@@ -71,13 +71,22 @@ document.addEventListener("keydown", function(e){
 
 
 //#region the place where we write and store each picture
-let p1 = new PhotoElement("La classe", "Pendant la journée d'intégration, la classe des Ta eut à préparer une corégraphie qu'ils durent présenter à un jury.", "./resources/images/classe.jpg")
-let p2 = new PhotoElement("Le tir à la corde", "Le tir à la corde fut une des épreuves les plus éprouvantes pour la classe de terminale A, ils finirent par gagner malgré les obstacles.", "./resources/images/corde.jpg")
-let p3 = new PhotoElement("La préparation", "La terminale A pendant la préparation agit comme une classe soudée et investie", "./resources/images/classe2.jpg")
-let p4 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "./resources/images/pancartes.jpg")
 
+let p1 = new PhotoElement("La préparation à la journée d'intégration", "C'est le début de la journée d'intégration pour la terminale A, c'est aussi le début du challenge inter-classe auquel ils se préparent aux CDI.", "./resources/images/classe2.jpg")
+let p2 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "./resources/images/pancartes.jpg")
+let p3 = new PhotoElement("Termin-A-Thor", "Le nom de la classe et son slogan, les fruits de l'imagination débordante des terminales A !", "/resources/images/tableau.jpg")
+let p4 = new PhotoElement("Les initiales de la classe", "Lors de la préparation, les élèves de la terminale A fabriquèrent les initiales de celle-ci pour les arborer fièrement lors des épreuves.", "/resources/images/carton.jpg")
+let p5 = new PhotoElement("La classe se coordonne", "Les délégués introduient à la classe la performance qu'ils devront réaliser devant le jury", "/resources/images/tableau_loin.jpg")
+let p6 = new PhotoElement("Soutenez le projet de classe !", '"Le projet qui tient à coeur aux élèves de la terminale A "Vos stylos usagés peuvent encore écrire une belle histoire"', "/resources/images/noah.jpeg")
+let p7 = new PhotoElement("La course à oeuf", "Les élèves au loin attendent le signal de départ pour le début de la course à oeuf !", "/resources/images/course_oeuf.jpg")
+let p8 = new PhotoElement("La course les yeux bandés", "Mariam tentent tant bien que mal de guider Noah jusqu'à la ligne d'arrivée mais il a les yeux bandés !", "/resources/images/course_aveugle.jpg")
+let p9 = new PhotoElement("Les TA en salle poly", "Les terminales A rentrent en salle polyvalente pour passer leurs épreuves !", "/resources/images/poly.jpg")
+let p10 = new PhotoElement("Le hula hoop", "Erwan s'apprête à engager son adversaire dans un duel de hula hoop !", "/resources/images/cerceau.jpg")
+let p11 = new PhotoElement("Casse-tête", "Antoine tente de résoudre le casse-tête qui lui est donné, mais le temps est limité !", "/resources/images/puzzle.jpg")
+let p12 = new PhotoElement("Twister", "De la souplesse et un mental solide...", "/resources/images/twister.jpg")
+let p13 = new  PhotoElement("Tir à la corde", "La force et la détermination des TA leur permirent de remporter l'épreuve du tir à la corde.", "/resources/images/corde.jpg")
 
-let elements = [p1, p2, p3, p4]
+let elements = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13]
 
 
 //#endregion
