@@ -72,7 +72,21 @@ document.addEventListener("keydown", function(e){
 
 //#region the place where we write and store each picture
 
-let p1 = new PhotoElement("La préparation à la journée d'intégration", "C'est le début de la journée d'intégration pour la terminale A, c'est aussi le début du challenge inter-classe auquel ils se préparent aux CDI.", "./resources/images/classe2.jpg")
+let p1 = new PhotoElement("La préparation à la journée d'intégration", "C'est le début de la journée d'intégration pour la terminale A, c'est aussi le début du challenge inter-classe auquel ils se préparent aux CDI.", "classe2.jpg")
+let p2 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "pancartes.jpg")
+let p3 = new PhotoElement("Termin-A-Thor", "Le nom de la classe et son slogan, les fruits de l'imagination débordante des terminales A !", "tableau.jpg")
+let p4 = new PhotoElement("Les initiales de la classe", "Lors de la préparation, les élèves de la terminale A fabriquèrent les initiales de celle-ci pour les arborer fièrement lors des épreuves.", "carton.jpg")
+let p5 = new PhotoElement("La classe se coordonne", "Les délégués introduient à la classe la performance qu'ils devront réaliser devant le jury", "tableau_loin.jpg")
+let p6 = new PhotoElement("Soutenez le projet de classe !", '"Le projet qui tient à coeur aux élèves de la terminale A "Vos stylos usagés peuvent encore écrire une belle histoire"', "noah.jpeg")
+let p7 = new PhotoElement("La course à oeuf", "Les élèves au loin attendent le signal de départ pour le début de la course à oeuf !", "course_oeuf.jpg")
+let p8 = new PhotoElement("La course les yeux bandés", "Mariam tentent tant bien que mal de guider Noah jusqu'à la ligne d'arrivée mais il a les yeux bandés !", "course_aveugle.jpg")
+let p9 = new PhotoElement("Les TA en salle poly", "Les terminales A rentrent en salle polyvalente pour passer leurs épreuves !", "poly.jpg")
+let p10 = new PhotoElement("Le hula hoop", "Erwan s'apprête à engager son adversaire dans un duel de hula hoop !", "cerceau.jpg")
+let p11 = new PhotoElement("Casse-tête", "Antoine tente de résoudre le casse-tête qui lui est donné, mais le temps est limité !", "puzzle.jpg")
+let p12 = new PhotoElement("Twister", "De la souplesse et un mental solide...", "twister.jpg")
+let p13 = new  PhotoElement("Tir à la corde", "La force et la détermination des TA leur permirent de remporter l'épreuve du tir à la corde.", "corde.jpg")
+
+/* let p1 = new PhotoElement("La préparation à la journée d'intégration", "C'est le début de la journée d'intégration pour la terminale A, c'est aussi le début du challenge inter-classe auquel ils se préparent aux CDI.", "./resources/images/classe2.jpg")
 let p2 = new PhotoElement("Les pancartes", "Quoi de mieux pour soutenir les compétiteurs de la classe qu'en brandissant des pancartes aux couleurs de celle-ci !", "./resources/images/pancartes.jpg")
 let p3 = new PhotoElement("Termin-A-Thor", "Le nom de la classe et son slogan, les fruits de l'imagination débordante des terminales A !", "/resources/images/tableau.jpg")
 let p4 = new PhotoElement("Les initiales de la classe", "Lors de la préparation, les élèves de la terminale A fabriquèrent les initiales de celle-ci pour les arborer fièrement lors des épreuves.", "/resources/images/carton.jpg")
@@ -85,7 +99,7 @@ let p10 = new PhotoElement("Le hula hoop", "Erwan s'apprête à engager son adve
 let p11 = new PhotoElement("Casse-tête", "Antoine tente de résoudre le casse-tête qui lui est donné, mais le temps est limité !", "/resources/images/puzzle.jpg")
 let p12 = new PhotoElement("Twister", "De la souplesse et un mental solide...", "/resources/images/twister.jpg")
 let p13 = new  PhotoElement("Tir à la corde", "La force et la détermination des TA leur permirent de remporter l'épreuve du tir à la corde.", "/resources/images/corde.jpg")
-
+*/
 let elements = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13]
 
 
@@ -119,9 +133,11 @@ function changePic(value){
     }
 
     displayPicture()
-    let imageContainer = document.getElementById("imageContainer")
+    // let imageContainer = document.getElementById("imageContainer")
 
-    imageContainer.className = ""
+
+
+    // imageContainer.className = ""
 }
 
 function loadImage(){
@@ -137,7 +153,21 @@ function displayPicture(){
     let descriptionContent = document.getElementById("descriptionContent")
 
 
-    imageContainer.src = `${elements[currentPic].photoPath}`
+    // imageContainer.src = `${elements[currentPic].photoPath}`
+    let path = `${elements[currentPic].photoPath}`
+
+    let pics = document.getElementsByClassName("imageContainer")
+    console.log(pics)
+    for(i = 0; i < pics.length; i++){
+        let srcSplit = pics[i].src.split("/")
+        let imageName = srcSplit[srcSplit.length - 1]
+        if(imageName != path){
+            pics[i].style.display = "none"
+        }else{
+            pics[i].style.display = "block"
+        }
+    }
+
     titleContent.innerHTML = elements[currentPic].name
     descriptionContent.innerHTML = elements[currentPic].description
 }

@@ -138,7 +138,7 @@ img{
     animation: fade 0.75s;
 }
 
-#imageContainer{
+.imageContainer{
     transition: 0.4s;
     width: 99%; height: 100%;
     object-fit: cover;
@@ -147,7 +147,6 @@ img{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: #fff 0 0 0px 3px;
-
 }
 
 #descriptionContent{
