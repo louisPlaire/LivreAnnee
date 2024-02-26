@@ -107,17 +107,19 @@ let elements = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13]
 
 // launches the app
 function go(){
-    mainMenu.style.opacity = "0"
-    setTimeout(function(){
-        mainMenu.remove()
-        document.body.style.backgroundColor = "#2b2b2b"
-        document.body.style.overflow = "scroll"
-
-        document.body.appendChild(application) // adding the app again
-
-        changePic(1)
-        isInApp = true
-    }, 1000)
+    if(document.readyState == "complete"){
+        mainMenu.style.opacity = "0"
+        setTimeout(function(){
+            mainMenu.remove()
+            document.body.style.backgroundColor = "#2b2b2b"
+            document.body.style.overflow = "scroll"
+    
+            document.body.appendChild(application) // adding the app again
+    
+            changePic(1)
+            isInApp = true
+        }, 1000)
+    }
 }
 
 function changePic(value){
