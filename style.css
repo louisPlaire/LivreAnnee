@@ -142,7 +142,7 @@ img{
     transition: 0.4s;
    /* width: 99%; height: 100%; */
     width: 20%; height: 20%;
-    object-fit: cover;
+    /* object-fit: cover; */
     margin: 0 auto;
     border-radius: 10px;
     border-bottom-left-radius: 0;
