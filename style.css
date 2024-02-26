@@ -141,7 +141,7 @@ img{
 .imageContainer{
     transition: 0.4s;
    /* width: 99%; height: 100%; */
-    width: 20%; height: 20%;
+    width: 2%; height: 22%;
     /* object-fit: cover; */
     margin: 0 auto;
     border-radius: 10px;
