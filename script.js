@@ -119,6 +119,8 @@ function go(){
             changePic(1)
             isInApp = true
         }, 1000)
+    }else{
+        document.getElementById("go").innerHTML = "Veuillez patienter..."
     }
 }
 
