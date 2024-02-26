@@ -164,6 +164,8 @@ function displayPicture(){
             pics[i].style.display = "none"
         }else{
             pics[i].style.display = "block"
+            pics[i].src = pics[i].src
+            
         }
     }
 
