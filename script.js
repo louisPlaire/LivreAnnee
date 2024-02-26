@@ -157,7 +157,6 @@ function displayPicture(){
     let path = `${elements[currentPic].photoPath}`
 
     let pics = document.getElementsByClassName("imageContainer")
-    console.log(pics)
     for(i = 0; i < pics.length; i++){
         let srcSplit = pics[i].src.split("/")
         let imageName = srcSplit[srcSplit.length - 1]
